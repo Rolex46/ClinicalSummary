@@ -1,0 +1,119 @@
+.clinical-summary {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.clinical-summary h1 {
+    color: #2c3e50;
+    text-align: center;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+.clinical-summary h2 {
+    color: #3498db;
+    margin-top: 20px;
+}
+
+.clinical-summary > div {
+    margin-bottom: 25px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.patient-info {
+    border-left: 4px solid #2ecc71;
+}
+
+.visit-details {
+    border-left: 4px solid #e74c3c;
+}
+
+.clinical-data {
+    border-left: 4px solid #f1c40f;
+}
+
+.prescriptions {
+    border-left: 4px solid #9b59b6;
+}
+
+.follow-up {
+    border-left: 4px solid #3498db;
+}
+
+/* Add some responsive design */
+@media (max-width: 600px) {
+    .clinical-summary {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+/* Add these styles to your existing CSS */
+.action-buttons {
+    max-width: 900px;
+    margin: 20px auto;
+    text-align: right;
+}
+
+.download-btn {
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.download-btn:hover {
+    background-color: #303f9f;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transform: translateY(-1px);
+}
+
+.download-btn i {
+    font-size: 1.1rem;
+}
+
+@media print {
+    .action-buttons {
+        display: none;
+    }
+}
